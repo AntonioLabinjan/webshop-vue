@@ -1,0 +1,37 @@
+/* Global Variables */
+$primary-color: #ff6f61;
+$secondary-color: #1f1f1f;
+$text-color: #333;
+$background-color: #f4f4f4;
+
+/* Typography */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+/* Reusable Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
